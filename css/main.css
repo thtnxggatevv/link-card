@@ -1,84 +1,107 @@
 html {
   box-sizing: border-box;
-  font-family: Georgia;
-  line-height: 1.5;
   background-color: #f0eee8;
+  line-height: 1.5;
+  list-style-type: none;
 }
 
 *, *::before, *::after {
   box-sizing: inherit;
 }
 
-a {
+.link-card {
+  display: block;
+  border-radius: 3px;
+  background-color: #dcd4cd;
+  border: solid;
+  border-color: #9a816d;
+  text-align: left;
+  list-style-type: none;
   text-decoration: none;
 }
 
-.link-card {
-  background-color: #dcd4cd;
-  display: block;
+.link-card:hover {
   color: #512200;
-  padding: 1rem;
-  border: 2px solid #9a816d;
-  border-radius: 3px;
+  background-color: #cabdb2;
 }
 
-.link-card:hover {
-  background-color: #cabdb2;
+a {
+  color: #512200;
+}
+
+body {
+  color: #512200;
+  font-family: Georgia, serif;
+  padding: 0;
 }
 
 .link-card h2 {
   font-family: Dosis, sans-serif;
-  font-weight: bold;
-  font-style: normal;
-  padding: 0;
-  margin-top: 0;
+  font-size: 1.5rem;
+}
+
+h2 {
+  text-align: left;
+  padding-left: 1rem;
+  margin-top: .6em;
+  margin-bottom: .8em;
 }
 
 p {
-  font-size: 1rem;
-  margin: 0 0 1rem;
-  border-bottom: 2px #9a816d solid;
-  padding: 0 0 1rem;
+  padding-left: 1rem;
+  text-align: left;
 }
 
 dl {
   font-size: .875rem;
-  margin: 0 0 1rem;
-  border-bottom: .75px #9a816d solid;
-  padding: 0 0 .6rem;
+  list-style-type: none;
+  margin-bottom: 0;
 }
 
 dt {
   display: inline-block;
-  width: 45%;
+  text-align: left;
+  margin-left: .5em;
+  width: 40%;
 }
 
 dd {
   display: inline-block;
-  width: 45%;
-  margin: 0;
   font-style: italic;
+  margin: 0;
+  padding-left: 0;
+  width: 40%;
 }
 
-.btn-wrap {
+nav {
+  border-top: 2px solid #9a816d;
+  border-bottom: 2px solid #9a816d;
+  padding-bottom: 1em;
+  margin-bottom: 1em;
+  margin-left: 1em;
+  margin-right: 1em;
+}
 
-  text-align: center;
+.link-card .btn {
+  display: inline-block;
+  font-family: Dosis, sans-serif;
+  color: #fff;
+  font-size: 1.125rem;
+  background-color: #785439;
+  padding: .4em .75em .5em;
+  border-radius: 8px;
+  border: solid;
+  border-color: #785439;
 }
 
 .link-card:hover .btn {
+  color: #fff;
   background-color: #512200;
-  border-color: #512200;
+  border: solid #512200;
 }
 
 .btn {
-  font-family: Dosis, sans-serif;
-  font-weight: bold;
-  font-size: 1.125rem;
   text-align: center;
-  color: #fff;
-  padding: .4em .75em .5em;
-  background-color: #785439;
-  border: 3px solid #785439;
-  border-radius: 8px;
-  display: inline-block;
+  margin-left: 4.5rem;
+  margin-bottom: .5em;
 }
