@@ -1,5 +1,7 @@
 html {
   box-sizing: border-box;
+  font-family: Georgia;
+  line-height: 1.5;
   background-color: #f0eee8;
 }
 
@@ -7,94 +9,75 @@ html {
   box-sizing: inherit;
 }
 
-body {
-  margin: 0;
-}
-
-.link-card {
-  display: inline-block;
-  background-color: #dcd4cd;
-  border-style: solid;
-  border-color: #9a816d;
-  border-radius: 8px;
-  margin: .5rem;
-  padding: .5rem;
+a {
   text-decoration: none;
 }
 
-.link-card h2 {
-  font-size: 1.5rem;
-  font-family: Dosis, sans-serif;
+.link-card {
+  background-color: #dcd4cd;
+  display: block;
   color: #512200;
+  padding: 1rem;
+  border: 2px solid #9a816d;
+  border-radius: 3px;
+}
+
+.link-card:hover {
+  background-color: #cabdb2;
+}
+
+.link-card h2 {
+  font-family: Dosis, sans-serif;
+  font-weight: bold;
+  padding: 0;
   margin-top: 0;
-  padding-top: .25rem;
-  padding-left: 1rem;
 }
 
 p {
-  font-family: Georgia;
-  line-height: 1.5;
-  padding-left: 1rem;
-  padding-right: 1rem;
-  color: #512200;
+  font-size: 1rem;
+  margin: 0 0 1rem;
+  border-bottom: 2px #9a816d solid;
+  padding: 0 0 1rem;
 }
 
-/** LISTS **/
+dl {
+  font-size: .875rem;
+  margin: 0 0 1rem;
+  border-bottom: .75px #9a816d solid;
+  padding: 0 0 .6rem;
+}
 
 dt {
-  list-style-type: none;
-  font-family: Georgia;
-  font-size: .875rem;
-  color: #512200;
-  padding-left: 1rem;
-  line-height: .2;
+  display: inline-block;
+  width: 45%;
 }
 
 dd {
   display: inline-block;
-  list-style-type: none;
-  padding-left: 6rem;
-  font-family: Georgia;
+  width: 45%;
+  margin: 0;
   font-style: italic;
-  font-size: .875rem;
-  color: #512200;
 }
 
-/** BUTTON **/
-
 .btn-wrap {
-  display: inline-block;
-  background-color: #785439;
-  border-radius: 8px;
-  color: #fff;
-  padding: .4em .75em .5em;
-  margin-left: 7rem;
-  margin-top: 1rem;
-  margin-bottom: 1rem;
+
+  text-align: center;
+}
+
+.link-card:hover .btn {
+  background-color: #512200;
+  border-color: #512200;
 }
 
 .btn {
   font-family: Dosis, sans-serif;
+  font-weight: bold;
+  font-size: 1.125rem;
   text-align: center;
-}
-
-/** HOVERING STATE **/
-
-.link-card:hover {
-  background-color: #cabdb2;
-  cursor: pointer;
-}
-
-.link-card:hover .btn-wrap {
-  background-color: #512200;
-  cursor: pointer;
-}
-
-/** HORIZONTAL LINE **/
-
-.borderline {
-  border-bottom: 1px solid  #9a816d;
-  border-top: 1px solid  #9a816d;
-  width: 20rem;
-  margin-left: 1rem;
+  color: #fff;
+  padding: .4em .75em .5em;
+  background-color: #785439;
+  border: 3px solid #785439;
+  border-radius: 8px;
+  display: inline-block;
 }
